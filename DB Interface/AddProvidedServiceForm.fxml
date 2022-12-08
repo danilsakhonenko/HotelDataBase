@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="450.0" prefWidth="450.0" styleClass="border-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" spacing="25.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="25.0" top="25.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox styleClass="HVBox">
+               <children>
+                  <Label text="                Чек клиента:" />
+                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="250.0" prefHeight="35.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox styleClass="HVBox">
+               <children>
+                  <Label text="      Заказанная услуга:" />
+                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="250.0" prefHeight="35.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox styleClass="HVBox">
+               <children>
+                  <Label text="Дата предоставления:" />
+                  <DatePicker maxWidth="250.0" prefHeight="35.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox styleClass="HVBox">
+               <children>
+                  <Label text="  Продолжительность:" />
+                  <Spinner />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" text="Добавить" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

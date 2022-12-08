@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <tabs>
+      <Tab text="Сотрудники">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="border-pane">
+               <left>
+                  <BorderPane prefHeight="661.0" prefWidth="363.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label styleClass="bold-label" text="Сотрудники гостиницы" />
+                              <HBox spacing="10.0">
+                                 <children>
+                                    <TextField minWidth="345.0" />
+                                    <Button minWidth="100.0" mnemonicParsing="false" styleClass="search-button" text="Найти" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" />
+                           </BorderPane.margin>
+                        </VBox>
+                     </top>
+                     <center>
+                        <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </center>
+                     <BorderPane.margin>
+                        <Insets right="6.0" />
+                     </BorderPane.margin>
+                     <bottom>
+                        <HBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" text="Добавить" />
+                              <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Редактировать" />
+                              <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Удалить" />
+                           </children>
+                           <BorderPane.margin>
+                              <Insets top="10.0" />
+                           </BorderPane.margin>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
+               </left>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="HVBox" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="bold-label" text="Детальная информация" />
+                        <TextArea prefHeight="1000.0" prefWidth="799.0" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="5.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </content>
+      </Tab>
+      <Tab text="Клиенты">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="border-pane">
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <center>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TextArea prefHeight="422.0" prefWidth="893.0" />
+                              <Label styleClass="bold-label" text="Информация о вселениях" />
+                              <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="505.0" prefWidth="893.0" />
+                           </children>
+                        </VBox>
+                     </center>
+                     <BorderPane.margin>
+                        <Insets left="6.0" />
+                     </BorderPane.margin>
+                     <top>
+                        <Label styleClass="bold-label" text="Детальная информация" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                  </BorderPane>
+               </center>
+               <left>
+                  <BorderPane prefHeight="661.0" prefWidth="363.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label styleClass="bold-label" text="Клиенты гостиницы" />
+                              <HBox spacing="10.0">
+                                 <children>
+                                    <TextField minWidth="345.0" />
+                                    <Button minWidth="100.0" mnemonicParsing="false" styleClass="search-button" text="Найти" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" />
+                           </BorderPane.margin>
+                        </VBox>
+                     </top>
+                     <center>
+                        <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </center>
+                     <BorderPane.margin>
+                        <Insets right="6.0" />
+                     </BorderPane.margin>
+                     <bottom>
+                        <HBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" text="Добавить" />
+                              <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Редактировать" />
+                              <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Удалить" />
+                           </children>
+                           <BorderPane.margin>
+                              <Insets top="10.0" />
+                           </BorderPane.margin>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
+               </left>
+            </BorderPane>
+         </content>
+      </Tab>
+      <Tab text="Пользователи системы">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="border-pane">
+               <top>
+                  <Label styleClass="bold-label" text="Пользователи системы" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+               <center>
+                  <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <FlowPane styleClass="flow-pane" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" text="Добавить" />
+                        <Button mnemonicParsing="false" text="Редактировать" />
+                        <Button mnemonicParsing="false" text="Удалить" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="10.0" />
+                     </BorderPane.margin>
+                  </FlowPane>
+               </bottom>
+            </BorderPane>
+         </content>
+      </Tab>
+      <Tab text="Справочники">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="border-pane">
+               <top>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="HVBox" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="bold-label" text="Выбор справочника" />
+                        <ComboBox prefWidth="150.0" />
+                        <Label styleClass="bold-label" text="..." />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </top>
+               <center>
+                  <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <FlowPane prefHeight="200.0" prefWidth="200.0" styleClass="flow-pane" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" text="Добавить" />
+                        <Button mnemonicParsing="false" text="Удалить" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="10.0" />
+                     </BorderPane.margin>
+                  </FlowPane>
+               </bottom>
+            </BorderPane>
+         </content>
+      </Tab>
+      <Tab text="Запросы">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="border-pane">
+               <top>
+                  <VBox alignment="CENTER" styleClass="HVBox" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="bold-label" text="Выбор запроса" />
+                        <ComboBox prefWidth="150.0" />
+                        <Label styleClass="bold-label" text="Выполнение запроса" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </top>
+            </BorderPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

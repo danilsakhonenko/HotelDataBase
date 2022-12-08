@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="450.0" prefWidth="450.0" styleClass="border-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <Button mnemonicParsing="false" text="Добавить" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" spacing="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox styleClass="HVBox">
+               <children>
+                  <Label text="                    Логин:" />
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox styleClass="HVBox">
+               <children>
+                  <Label text="                  Пароль:" />
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox styleClass="HVBox">
+               <children>
+                  <Label text="                      Роль:" />
+                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="250.0" prefHeight="35.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox styleClass="HVBox">
+               <children>
+                  <Label text="Персональный ID:" />
+                  <TextField />
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="25.0" top="25.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

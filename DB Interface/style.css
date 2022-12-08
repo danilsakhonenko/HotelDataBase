@@ -1,0 +1,40 @@
+.root {
+    -fx-font-size: 16;
+    -fx-alignment: CENTER;
+}
+.tab > .tab-container > .tab-label{
+    -fx-pref-width: 200;
+    -fx-pref-height: 30;
+}
+.combo-box{
+    -fx-pref-width: 400;
+}
+.text-field{
+    -fx-pref-width: 250;
+}
+.bold-label{
+    -fx-font-weight: bold;
+}
+.border-pane {
+    -fx-padding: 10;
+}
+.button{
+    -fx-pref-width: 150;
+    -fx-pref-height: 40;
+}
+.search-button{
+    -fx-pref-width: 100;
+    -fx-pref-height: 35;
+}
+.flow-pane {
+    -fx-hgap: 10;
+    -fx-alignment: CENTER;
+    -fx-pref-width: -1;
+    -fx-pref-height: -1;
+}
+.HVBox{
+    -fx-spacing: 10;
+    -fx-alignment: CENTER;
+    -fx-pref-width: -1;
+    -fx-pref-height: -1;
+}
